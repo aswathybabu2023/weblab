@@ -1,0 +1,37 @@
+<html>
+<head>
+<script type="text/javascript">
+var i=0;
+function test()
+{if(document.a.x[1].checked)
+i=i+1;
+if(document.a.y[0].checked)
+i=i+1;
+if(document.a.z[1].checked)
+i=i+1;
+alert("your score is"+i+"/3");
+}
+</script>
+</head>
+<body>
+<form name="a">
+<h3>How many days are there in a year?</h3>
+<input type="radio" id="n" name="x" value="324">
+<label for="choice-324">324</label>
+<input type="radio" id="n" name="x" value="365">
+<label for="choice-365">365</label>
+<h3>Which is the largest ocean in the world?</h3>
+<input type="radio" id="n1" name="y" value="pacific">
+<label for="choice-pacific">pacific</label>
+<input type="radio" id="n1" name="y" value="atlantic">
+<label for="choice-atlantic">atlantic </label>
+<h3>How many letters are there in the English alphabet?</h3>
+<input type="radio" id="n2" name="z" value="28">
+<label for="choice-28">28</label>
+<input type="radio" id="n2" name="z" value="26">
+<label for="choice-26">26</label>
+ <input type="submit" value="Submit" onclick="test(this)">
+</form>
+</body>
+</html>
+
